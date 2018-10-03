@@ -79,8 +79,10 @@ def all_holidays_with_bbq(holiday_hash)
       supplies.collect do |items|
         if items == "BBQ"
           return "YAY"
+          array << "#{event}"
+        end
+      end
     end
-
   end
   array
 end
