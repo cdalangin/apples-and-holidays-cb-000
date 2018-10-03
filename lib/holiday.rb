@@ -76,7 +76,9 @@ def all_holidays_with_bbq(holiday_hash)
   array = []
   holiday_hash.collect do |season, events|
     events.collect do |event, supplies|
-      array << "#{supplies}"
+      supplies.collect do |items|
+        if items == "BBQ"
+          return "YAY"
     end
 
   end
