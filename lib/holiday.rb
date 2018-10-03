@@ -78,5 +78,6 @@ def all_holidays_with_bbq(holiday_hash)
     events.collect do |event, supplies|
       array << "#{supplies}"
     end
+    array
   end
 end
