@@ -66,9 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, event|
     print "#{season}:"
     print "#{event}:"
-    event.each do |supplies|
-      print "#{supplies}"
-    end
+
   end
 end
 
@@ -79,7 +77,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, time|
     time.each do |event|
       event.each do |supplies|
-        if supplies.include?("BBQ") == true
+        if supplies.include?("BBQ")
           array << event
         end
       end
