@@ -78,7 +78,8 @@ def all_holidays_with_bbq(holiday_hash)
   array = []
   holiday_hash.each do |season|
     season.each do |event|
-      array << event
+      event.each do |supplies|
+        array << supplies
     end
   end
   array
