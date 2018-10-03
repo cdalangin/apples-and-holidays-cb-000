@@ -82,6 +82,7 @@ def all_holidays_with_bbq(holiday_hash)
         array << event
       end
     end
+      array
   end
-  array
+
 end
