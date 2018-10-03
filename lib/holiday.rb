@@ -76,8 +76,9 @@ def all_holidays_with_bbq(holiday_hash)
   array = []
   holiday_hash.collect do |season, events|
     events.collect do |event, supplies|
-      puts "#{supplies}"
+      puts "#{supplis}"
     end
   end
-  array
+
+
 end
